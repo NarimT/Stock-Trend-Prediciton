@@ -37,7 +37,8 @@ Predict **NVDA’s next‑hour direction (UP/DOWN)** from an hourly, multi‑sou
 Hourly OHLC can contain **extreme wicks/spikes** that distort volatility‑sensitive features.  
 We correct these outliers before building features.
 
-<img src="Documents/outlier_fix.png" alt="Extreme wick correction (before/after)" width="900">
+<img src="Documents/outlier_fix.png" alt="Extreme wick correction (before/after)" width="300">
+<img src="Documents/spikes.png" alt="Extreme wick correction (before/after)" width="700">
 
 ---
 
