@@ -5,6 +5,8 @@
 Predict **NVDA’s next‑hour direction (UP/DOWN)** from an hourly, multi‑source dataset  
 (price, technicals, market context, sentiment, insiders).
 
+ **[Project report](Documents/FINAL_REPORT_MACHINE_LEARNING_PROJECT___Q_and_friends.pdf)**
+
 <!-- HERO: only ONE clean image row -->
 <p>
   <img src="Documents/dashboard.png.jpg" alt="Forecasting dashboard" width="78%">
@@ -27,17 +29,17 @@ Predict **NVDA’s next‑hour direction (UP/DOWN)** from an hourly, multi‑sou
 ---
 
 ## What matters (quick insights)
-- **Price + technical indicators** are the strongest hourly signals  
-- **Market context** adds small but measurable gains  
-- **Sentiment / insider features** were negligible at the 1‑hour horizon (in this setup)
+- **Price + technical indicators** are the dominant hourly signals  
+- **Market context** adds marginal but measurable improvement  
+- **Sentiment / insider features** contribute negligibly at the 1‑hour horizon (in this setup)
 
 ---
 
 ## Data preparation (why we clean the spikes)
 Hourly OHLC can contain **extreme wicks/spikes** that distort volatility‑sensitive features.  
-We correct these outliers before building features.
+We correct these outliers before feature engineering.
 
-<img src="Documents/outlier_fix.png" alt="Extreme wick correction (before/after)" width="300">
+<img src="Documents/outlier_fix.png" alt="Min-max scaling formula (train-set statistics)" width="300">
 <img src="Documents/spikes.png" alt="Extreme wick correction (before/after)" width="700">
 
 ---
