@@ -1,0 +1,4 @@
+# df["label_oc"] = (df["nvda_close"] > df["nvda_open"]).shift(-1).astype("Int64")
+# df["label_cc"] = (df["nvda_close"].shift(-1) > df["nvda_close"]).astype("Int64")
+
+# df[df["label_oc"] != df["label_cc"]][["nvda_open", "nvda_close", "label_oc", "label_cc"]]["2023-03-03":]
